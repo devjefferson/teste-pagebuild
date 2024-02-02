@@ -1,0 +1,61 @@
+@import "react-toastify/dist/ReactToastify.css";
+@import "slick-carousel/slick/slick.css";
+@import "react-datepicker/dist/react-datepicker.min.css";
+@import "nprogress/nprogress.css";
+
+@font-face {
+  font-family: "Amble";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/fonts/Amble/Amble-Regular.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amble";
+  font-weight: 700;
+  font-style: normal;
+  src: url(/fonts/Amble/Amble-Bold.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mohave";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/fonts/Mohave/Mohave-Regular.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mohave";
+  font-weight: 600;
+  font-style: normal;
+  src: url(/fonts/Mohave/Mohave-Bold.ttf);
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #__next {
+    @apply h-full;
+    @apply [&_.grecaptcha-badge]:invisible;
+  }
+
+  html,
+  body,
+  * {
+    @apply font-body-regular text-nano;
+  }
+
+  .react-select-menu {
+    background-color: white !important;
+  }
+  #nprogress {
+    @apply [&_.bar]:!bg-secondary-500 [&_.bar]:!h-nano;
+    @apply [&_.bar_>_.peg]:!shadow-xlarge [&_.bar_>_.peg]:!h-nano;
+    @apply [&_.spinner]:!hidden;
+  }
+}
