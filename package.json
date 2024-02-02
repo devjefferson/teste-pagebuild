@@ -13,7 +13,7 @@
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
     "@radix-ui/react-dialog": "^1.0.4",
-    "@squadfy/uai-design-system": "^0.5.0",
+
     "axios": "^1.4.0",
     "date-fns": "^2.30.0",
     "graphql": "16.6.0",
